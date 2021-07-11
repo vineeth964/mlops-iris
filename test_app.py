@@ -60,7 +60,7 @@ def test_pred_invalid_payload():
 
 
 # test to check if Iris Virginica is classified correctly with different payload
-def test_pred_Virginica_02():
+def test_pred_virginica_diff_payload():
     # defining a sample payload for the testcase
     payload = {
         "sepal_length": 0.2,
@@ -73,5 +73,3 @@ def test_pred_Virginica_02():
         # asserting the correct response is received
         assert response.status_code == 200
         assert response.json()["flower_class"] == "Iris Virginica"
-
-        # ,"timestamp":datetime.now().time()
