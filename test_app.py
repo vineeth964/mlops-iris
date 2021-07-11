@@ -16,8 +16,8 @@ def test_ping():
 def test_pred_virginica():
     # defining a sample payload for the testcase
     payload = {
-        "sepal_length": 3,
-        "sepal_width": 5,
+        "sepal_length": 3.2,
+        "sepal_width": 5.2,
         "petal_length": 3.2,
         "petal_width": 4.4,
     }
@@ -73,3 +73,4 @@ def test_pred_virginica_diff_payload():
         # asserting the correct response is received
         assert response.status_code == 200
         assert response.json()["flower_class"] == "Iris Virginica"
+

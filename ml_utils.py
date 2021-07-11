@@ -9,7 +9,7 @@ from datetime import datetime
 # define a Gaussain NB classifier
 clf = GaussianNB()
 # Declare the SVM classifier
-svm_clf = svm.SVC(kernel='poly', degree=2, max_iter=30000)
+svm_clf = svm.SVC(kernel='poly', degree=2, max_iter=3000)
 
 # define the class encodings and reverse encodings
 classes = {0: "Iris Setosa", 1: "Iris Versicolour", 2: "Iris Virginica"}
